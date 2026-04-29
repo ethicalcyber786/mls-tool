@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">                                                                 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximu>    <title>MLS | UPGRADE</title>
+    <style>
+        body { background: #050505; color: #00ff41; font-family: 'Arial Black', >
+        .pkg-box { border: 2px solid #00ff41; padding: 25px; margin: 20px auto; >        .pkg-box:active { background: #00ff41; color: #000; transform: scale(0.9>
+        .price { font-size: 26px; display: block; margin-top: 10px; color: #ffd7>    </style>                                                                     </head>
+<body>
+    <h1 style="font-size: 24px; margin-top: 30px;">[ UPGRADE_REQUIRED ]</h1>         <p style="font-size: 12px; margin-bottom: 40px;">YOUR CREDITS EXPIRED. SELEC>
+
+    <div class="pkg-box" onclick="pay('WEEKLY_500')">WEEKLY ACCESS<span class="p>
+    <div class="pkg-box" onclick="pay('MONTHLY_1500')">MONTHLY ACCESS<span class>
+    <div class="pkg-box" onclick="pay('YEARLY_5000')">YEARLY ACCESS<span class=">
+    <div class="pkg-box" onclick="pay('LIFETIME_10000')">LIFETIME ACCESS<span cl>
+
+    <script>
+        function pay(p) {
+            let num = "923165305671";
+            let msg = `Bhai, Mujhe ye package chahiye: ${p}. User: {{ user.usern>
+            window.location.href = `https://wa.me/${num}?text=${encodeURICompone>
+        }
+    </script>
+</body>
+</html>
